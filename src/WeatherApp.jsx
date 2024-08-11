@@ -24,7 +24,7 @@ export const WeatherApp = () => {
       const data = await response.json();
       setDataClima(data);
       console.log(dataClima);
-    } catch {
+    } catch (error) {
       console.error("Ocurrió el siguiente provlema:", error);
     }
   };
